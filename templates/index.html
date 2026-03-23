@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Welcome to AI DashBoard Generator</div>
+                <ul class="nav-li">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form method="post" action="" enctype="multipart/form-data">
+                <input type="file" name="file" placeholder="Select files you want to upload: ">
+                <input type="submit" value="Submit files">
+            </form>
+        {% if preview %}
+        <h1>Here is your Data Preview</h1>
+        {{preview | safe}}
+        {% endif %}
+
+        {% if plots %}
+        <h2>Charts</h2>
+        {% for plot in plots %}
+        <img src="{{ url_for('static', filename=plot) }}" width="400">
+        {% endfor %}
+        {% endif %}
+        </div>
+</main>
+    <footer>| Copyrights | All right reserved | 2026 | MoralCoder |</footer>
+</body>
+</html>
