@@ -1,21 +1,21 @@
 # CSV Data Analyzer Web App (Flask)
 
-## 📌 Overview
+## Overview
 This is a Flask-based web application that allows users to upload CSV files and perform basic data analysis and visualization.
 
-## 🚀 Features
+## Features
 - Upload CSV files
 - Preview dataset
 - Summary statistics
 - Data visualization
 
-## 🛠 Tech Stack
+## Tech Stack Used
 - Python
 - Flask
 - Pandas
 - Matplotlib
 
-## ▶️ How to Run
+## How to Run An Guide
 
 1. Download the project
 2. Install dependencies:
@@ -25,5 +25,5 @@ This is a Flask-based web application that allows users to upload CSV files and 
 4. Open browser:
    http://127.0.0.1:5000/
 
-## 📊 Use Case
+## Use Case For Convinent exploaration
 Helps users quickly explore datasets without writing code.
